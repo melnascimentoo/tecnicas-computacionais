@@ -1,11 +1,11 @@
-:root {
-    --cor-fundo: #01080E;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333;
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
+:root{
+    --cor-fundo: #f9caee ;
+    --cor-principal: #aa3c64 ;
+    --cor-secundaria: #f986b2; 
+    --cor-destaque: #f8cee0;
+    --cor-texto: #f1cad8;
 }
-  
+
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
 }
 
 .caixa-principal{
@@ -21,10 +22,13 @@ body {
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1{
     color: var(--cor-destaque);
+    margin-bottom: 20px;
 }
 
 button {
@@ -33,10 +37,31 @@ button {
     border: none;
     border-radius: 15px;
     padding: 15px;
-    transition: background-color 0.3s;
+    margin: 10px 0;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
+button:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+.reiniciar-btn {
+    background-color: var(--cor-principal);
+    color: var(--cor-destaque);
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    display: none; /* Começa oculto */
+}
+
+.reiniciar-btn:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
 }

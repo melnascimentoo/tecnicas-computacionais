@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Você decide o futuro da IA</title>
+    <title>Uma noite tranquila</title>
 </head>
-
 <body>
     <div class="caixa-principal">
-        <h1>Você decide o futuro da IA</h1>
+        <h1>Uma noite tranquila</h1>
+        <!-- Div para exibir a pergunta atual -->
         <div class="caixa-perguntas"></div>
+
+        <!-- Div para exibir as alternativas -->
         <div class="caixa-alternativas"></div>
+
+        <!-- Div para exibir o resultado final -->
         <div class="caixa-resultado">
             <p class="texto-resultado"></p>
+            <!-- Botão de reiniciar, inicialmente invisível -->
+            <button id="reiniciar" class="reiniciar-btn" style="display: none;">Reiniciar</button>
         </div>
     </div>
+
+    <!-- Referência ao arquivo JavaScript -->
     <script src="script.js"></script>
 </body>
-
 </html>
